@@ -2,6 +2,7 @@ package com.clouddrive.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Objects;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,7 +45,7 @@ public class DelFileServlet extends HttpServlet {
 		String uuidNames[] = request.getParameterValues("fileName");
 		String paths[] = request.getParameterValues("path");
 		System.out.println("delFileServlet:");
-		for (int i = 0; i < paths.length; i++) {
+		for (int i = 0; Objects.nonNull(paths)&&i < paths.length; i++) {
 			String path = paths[i];
 			String url = this.getServletContext()
 					.getRealPath("/WEB-INF/Drive/" + userName + "/" + path + "/" + uuidNames[i]);

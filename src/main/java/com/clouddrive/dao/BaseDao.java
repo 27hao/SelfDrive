@@ -29,9 +29,7 @@ public abstract class BaseDao {
 		Context ctx = null;
 		// 获取连接并捕获异常
 		try {
-			ctx = new InitialContext();
-
-			DataSource ds = applicationContext.getBean(MysqlDataSource.class);
+			DataSource ds = applicationContext.getBean(DataSource.class);
 			conn = ds.getConnection();
 		} catch (Exception e) {
 			e.printStackTrace();// 异常处理
