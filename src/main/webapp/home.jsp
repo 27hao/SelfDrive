@@ -75,23 +75,6 @@
 	</nav>
 
 	<div class="container">
-		<div class="alert alert-primary alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert"
-				aria-label="Close">
-				<span aria-hidden="true">×</span>
-			</button>
-			<h4>云盘系统说明：</h4>
-			<h5>&nbsp;&nbsp;1.&nbsp;本系统是一个仿照百度网盘做的一个小型个人云盘，主要功能有登录注册，上传下载文件以及分享文件等。</h5>
-			<h5>&nbsp;&nbsp;2.&nbsp;系统前端采用bootstrap框架和Jquery实现基本的布局以及前后交互等。</h5>
-			<h5>&nbsp;&nbsp;3.&nbsp;前端上传文件效果实现用的是bootstrap-fileinput组件，感谢高人指点，省去了很多麻烦！
-			</h5>
-			<h5>&nbsp;&nbsp;3.&nbsp;后端对文件的操作则是用最基本的servlet实现，
-				受到网络大牛“孤傲苍狼”的“javaweb学习”总结系列博客第五十 一篇影响颇深，感谢大佬无私分享知识。</h5>
-
-			<p>
-				<button type="button" class="btn btn-info" data-dismiss="alert">关闭该说明</button>
-			</p>
-		</div>
 
 		<div class="topsharetitle">系统状况及留言板：</div>
 		<div class="row">
@@ -102,15 +85,16 @@
 						<div id="InstituteChart"
 							style="width: 500px; height: 460px; min-width: 300px;">
 							<script id="template" type="text/x-mustache">
-                    {{#isEmpty}}
-                        <div class="alert alert-info alert-dismissible pull-left" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                            <strong>系统未使用过哦，赶紧注册使用吧！</strong>
-                          </div>
-                    {{/isEmpty}}
-                    </script>
+								{{data}}
+								{{#isEmpty}}
+									<div class="alert alert-info alert-dismissible pull-left" role="alert">
+										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+										<strong>系统未使用过哦，赶紧注册使用吧！</strong>
+									  </div>
+								{{/isEmpty}}
+                    		</script>
 						</div>
 					</div>
 				</div>
@@ -128,25 +112,6 @@
 									style="width: 200px;" onclick="leaveMessage()">留言</button>
 							</div>
 						</form>
-						<div class=" panel panel-default">
-							<div class=" panel-heading"></div>
-							<div class=" panel-body">
-								<ul class=" list-group">
-									<li class=" list-group-item">站长：&nbsp;<span
-										class="glyphicon glyphicon-user">&nbsp;</span>李嘉坤 魏小奇 陈曦 吕钰双
-									</li>
-									<li class=" list-group-item">电话：&nbsp;<span
-										class="glyphicon glyphicon-bell">&nbsp;</span>17711040973
-									</li>
-									<li class=" list-group-item">邮箱：&nbsp;<span
-										class="glyphicon glyphicon-envelope">&nbsp;</span>1404895946@qq.com
-									</li>
-									<li class=" list-group-item">QQ：&nbsp;&nbsp;<span
-										class="glyphicon glyphicon-user">&nbsp;</span>1404895946
-									</li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -193,15 +158,6 @@
 				</div>
 				<!--card-container -->
 			</c:forEach>
-		</div>
-
-		<div class=" row">
-			<div class="col-md" style="text-align: center">
-				<p>
-					Copyright&nbsp;@&nbsp;2018-12-28&nbsp; <br>
-					四川师范大学&nbsp;计算机科学学院&nbsp; <br>
-				</p>
-			</div>
 		</div>
 	</div>
 

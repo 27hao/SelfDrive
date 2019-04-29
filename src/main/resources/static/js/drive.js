@@ -55,7 +55,7 @@ $(function() {
 									".param .path").text());
 						});
 				$.ajax({
-					url : 'DelFile',
+					url : 'DelFiles',
 					data : {
 						"fileName" : fileNames,
 						"path" : paths
