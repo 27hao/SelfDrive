@@ -6,9 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>云盘</title>
-<script src="../../../resources/static/js/jquery-3.2.1.min.js"></script>
-<script src="../../../resources/static/js/ajax.js"></script>
-<script src="../../../resources/static/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
 <!-- bootstrap -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -24,16 +24,16 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	media="all" rel="stylesheet" type="text/css" />
-<script src="../../../resources/static/themes/fa/theme.js" type="text/javascript"></script>
+<script src="themes/fa/theme.js" type="text/javascript"></script>
 <!-- clipboard -->
-<script src="../../../resources/static/js/clipboard.min.js"></script>
+<script src="js/clipboard.min.js"></script>
 <!--  -->
-<link rel="stylesheet" type="text/css" href="../../../resources/static/css/main.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm main-navigation">
 	<div class="container">
-		<a class="navbar-brand" href="#"> <img src="../../../resources/static/themes/fa/img/logo.png"
+		<a class="navbar-brand" href="#"> <img src="themes/fa/img/logo.png"
 			alt="logo" class="logo"> 在线云盘
 		</a>
 		<ul class="navbar-nav">

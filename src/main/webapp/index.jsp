@@ -7,9 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>云盘</title>
-<script src="static/js/jquery-3.2.1.min.js"></script>
-<script src="static/js/ajax.js"></script>
-<script src="static/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
 <!-- bootstrap -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -21,24 +21,24 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 	type="text/javascript"></script>
-<script type="text/javascript" src="static/js/mustache.min.js"></script>
+<script type="text/javascript" src="js/mustache.min.js"></script>
 <!-- Font Awesome -->
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	media="all" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" type="text/css" href="static/css/main.css">
-<link rel="stylesheet" type="text/css" href="static/css/checkbox.css">
-<script src="static/js/mkfoldercheck.js" type="text/javascript"></script>
-<script src="static/js/signupcheck.js" type="text/javascript"></script>
-<script src="static/js/logincheck.js" type="text/javascript"></script>
-<script src="static/js/home.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/checkbox.css">
+<script src="js/mkfoldercheck.js" type="text/javascript"></script>
+<script src="js/signupcheck.js" type="text/javascript"></script>
+<script src="js/logincheck.js" type="text/javascript"></script>
+<script src="js/home.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-sm main-navigation">
 		<div class="container">
-			<a class="navbar-brand" href="#"> <img src="static/themes/fa/img/logo.png"
+			<a class="navbar-brand" href="#"> <img src="themes/fa/img/logo.png"
 				alt="logo" class="logo"> 在线云盘
 			</a>
 			<ul class="navbar-nav">
@@ -325,8 +325,8 @@
 		</div>
 	</div>
 
-	<script src="static/js/echars/echarts.min.js"></script>
-	<script src="static/js/echars/westeros.js"></script>
+	<script src="js/echars/echarts.min.js"></script>
+	<script src="js/echars/westeros.js"></script>
 	<script>
 		$.getJSON("EcharsData", function(result) {
 			console.log(result);

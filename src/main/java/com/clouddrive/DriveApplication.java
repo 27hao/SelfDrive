@@ -11,12 +11,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  */
 @SpringBootApplication
 @ServletComponentScan
-public class DriveApplication extends SpringBootServletInitializer{
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(DriveApplication.class);
-    }
-
+public class DriveApplication {
     public static void main(String[] args) {
         SpringApplication.run(DriveApplication.class,args);
     }
